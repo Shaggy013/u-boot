@@ -428,6 +428,24 @@
 	status = "okay";
 };
 
+&sata1 {
+	u-boot,dm-pre-reloc;
+	status = "okay";
+};
+
+&combphy1_usq {
+	u-boot,dm-pre-reloc;
+	status = "okay";
+};
+
+&pipegrf {
+	u-boot,dm-pre-reloc;
+};
+
+&pipe_phy_grf1{
+	u-boot,dm-pre-reloc;
+};
+
 #if 0
 &i2c0 {
 	u-boot,dm-pre-reloc;
